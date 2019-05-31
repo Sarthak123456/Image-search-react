@@ -13,8 +13,8 @@ class App extends Component {
       this.setState({ searchTerm : title , 
         pictures : pictures}); 
       // this.setState({ pictures : pictures }); 
-      console.log(this.state.searchTerm);
-      console.log('pictures in app.js' , this.state.pictures);
+      // console.log(this.state.searchTerm);
+      // console.log('pictures in app.js' , this.state.pictures);
       
     }
 
@@ -31,7 +31,7 @@ render(){
     <div className="App">
     
     <Search searchTerm = {this.searchTerm} />
-    <Pictures pictures = {this.state.pictures}/>
+    {/* <Pictures pictures = {this.state.pictures}/> */}
     </div>
   );
 }
