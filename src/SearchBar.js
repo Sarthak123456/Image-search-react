@@ -123,8 +123,12 @@ class SearchBar extends Component{
             <h1 > Search photos!</h1>
             
             <form className = 'header-text col-md-5' onSubmit= {this.onSubmit}>
-               <span><input type= 'text' className = 'form-control' name = 'title' placeholder = 'Search' value = {this.state.title} onChange = {this.handleChange} onKeyUp ={() => {this.Delay(function(){this.onChange()}.bind(this), 800)}} autoComplete = 'off' />
+                
+               <span><input type= 'text' className = 'form-control' name = 'title' placeholder = 'Search'
+                value = {this.state.title} onChange = {this.handleChange}
+                onKeyUp ={() => {this.Delay(function(){this.onChange()}.bind(this), 500)}} autoComplete = 'off' />
                 <input type = 'submit' value = 'submit' className = 'btn btn-primary' /></span>
+
             </form>
             {
                 this.state.tags.map((tag) => (
